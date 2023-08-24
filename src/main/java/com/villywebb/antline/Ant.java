@@ -49,11 +49,9 @@ public class Ant extends Circle {
     private void switchDirection(){
         if (moveDirection == 0) {
             moveDirection = 1;
-            System.out.println("cool");
 
         } else if (moveDirection == 1) {
             moveDirection = 0;
-            System.out.println("cool1");
         }
     }
 

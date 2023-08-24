@@ -48,6 +48,8 @@ public class Main extends Application {
     public void setup(Stage stage) {
         line = new Line(50, 200, 1100 - (50 * 2), root);
         Button play = new Button("Play");
+        play.setLayoutX(500);
+        play.setLayoutY(350);
 
         CheckBox highSpeedSim = new CheckBox();
 
@@ -73,6 +75,7 @@ public class Main extends Application {
 
         highSpeedSim.setLayoutX(750);
         highSpeedSim.setLayoutY(300);
+        highSpeedSim.setText("high-speed");
         highSpeedSim.selectedProperty().addListener(new ChangeListener<Boolean>() {
             @Override
             public void changed(ObservableValue<? extends Boolean> observableValue, Boolean aBoolean, Boolean t1) {
